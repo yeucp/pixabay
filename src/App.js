@@ -45,7 +45,9 @@ function App() {
   }
 
   const jumbotron = document.querySelector('.jumbotron')
-  jumbotron.scrollIntoView({behavior: 'smooth'})
+  if(jumbotron){
+    jumbotron.scrollIntoView({behavior: 'smooth'})
+  }
 
   return (
     <div className="container">
